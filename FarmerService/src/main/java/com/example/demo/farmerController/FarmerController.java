@@ -1,7 +1,6 @@
 package com.example.demo.farmerController;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,36 +12,45 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.example.demo.farmerEntity.Farmer;
-import com.example.demo.farmerRepository.FarmerRepository;
+import com.example.demo.farmerService.FarmerService;
 @RestController
-@RequestMapping("/farmer")
+@RequestMapping("/farmers")
 public class FarmerController {
+	
 	@Autowired
-	private FarmerRepository farmerRepository;
-	@PostMapping("/addFarmer")
-	public String saveFarmer(@RequestBody Farmer farmer) {
-		farmerRepository.save(farmer);
-		return "Farmer added";
-	}
+	public FarmerService farmerService;
 	
 	@GetMapping("/findAll")
-	public List<Farmer> getFarmer() {
-		return farmerRepository.findAll();
-	}
-	@GetMapping("/findAll/{id}")
-	public Optional<Farmer> getFarmer(@PathVariable int id) {
-		return farmerRepository.findById(id);
+	public List<Farmer> getFarmerInfoService(){
+		return farmerService.getFarmerInfo();
 	}
 	
-	@PutMapping("/updateFarmer")
-	public Farmer updateFarmer(@RequestBody Farmer farmer) {
-		return farmerRepository.save(farmer);	
+	@GetMapping("/findAll/{id}")  
+	public Farmer getFarmerInfoById(@PathVariable("id") int id)   
+	{  
+		return farmerService.getFarmerById(id);
+	} 
+	
+	@PostMapping("/addFarmer")  
+	public Farmer addFarmerInfo(@RequestBody Farmer farmer)   
+	{  
+		farmerService.addFarmerInfo(farmer); 
+		return farmer;  
 	}
-	@DeleteMapping("/delete/{id}")
-	public String deleteFarmer(@PathVariable int id) {
-		farmerRepository.deleteById(id);
-		return "Farmer Deleted";
-	}
+	
+	@PutMapping("/updateFarmer/{id}")  
+	public Farmer updateFarmerInfo(@PathVariable("id") int id,@RequestBody Farmer farmer)   
+	{  
+		farmerService.updateFarmerInfo(id,farmer);
+	return farmer;  
+	}  
+	
+	@DeleteMapping("/deleteFarmer/{id}")  
+	public void deleteFarmerInfo(@PathVariable("id") int id)   
+	{  
+		farmerService.deleteFarmerInfo(id);  
+	}  
 
 }

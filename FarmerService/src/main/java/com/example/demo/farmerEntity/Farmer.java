@@ -1,50 +1,75 @@
 package com.example.demo.farmerEntity;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="Farmer")
 public class Farmer {
-	@Id
 	private int id;
-	private String firstName;
-	private String lastName;
-	private String address;
-	
-	
+	private String cropType;
+	private String name;
+	private String quantity;
+	private int price;
+	private String location;
+	//Default constructor
 	public Farmer() {
 		super();
 	}
-	public Farmer(int id, String firstName, String lastName, String address) {
+	//Parameterized constructor
+	public Farmer(int id, String cropType, String quantity, int price, String location,String name) {
 		super();
 		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.address = address;
+		this.cropType = cropType;
+		this.quantity = quantity;
+		this.price = price;
+		this.location = location;
+		this.name=name;
 	}
+	//Getter and Setter
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getFirstName() {
-		return firstName;
+
+	public String getCropType() {
+		return cropType;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+	public void setCropType(String cropType) {
+		this.cropType = cropType;
 	}
-	public String getLastName() {
-		return lastName;
+
+	public String getQuantity() {
+		return quantity;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
 	}
-	public String getAddress() {
-		return address;
+
+	public int getPrice() {
+		return price;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+
+	public void setPrice(int price) {
+		this.price = price;
 	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	
 }
