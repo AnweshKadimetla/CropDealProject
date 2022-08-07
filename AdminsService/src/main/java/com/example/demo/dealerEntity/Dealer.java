@@ -10,20 +10,26 @@ public class Dealer {
 	private int id;
 	private String firstName;
 	private String lastName;
+	private String email;
+	private long phoneNumber;
 	private String address;
 	
-	
+	//Default constructor
 	public Dealer() {
 		super();
 		
 	}
-	public Dealer(int id, String firstName, String lastName, String address) {
+	//Parameterized constructor
+	public Dealer(int id, String firstName, String lastName, String email, long phoneNumber, String address) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
 		this.address = address;
 	}
+	//Getter and Setter
 	public int getId() {
 		return id;
 	}
@@ -48,12 +54,25 @@ public class Dealer {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public long getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(long phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	//To String
 	@Override
 	public String toString() {
 		return "Dealer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", address=" + address
 				+ "]";
 	}
-	
 	
 
 }

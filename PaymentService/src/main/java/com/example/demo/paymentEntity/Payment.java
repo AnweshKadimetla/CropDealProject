@@ -6,39 +6,48 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="Payment")
 public class Payment {
 	@Id
-	private int id;
-	private int amount;
-	private String status;
+	private int t_id;
+	private String s_name;
+	private String r_name;
+	private long amount;
 	
+	//Default constructor
 	public Payment() {
 		super();
-		
 	}
-	public Payment(int id, int amount, String status) {
+	//Parameterized constructor
+	public Payment(int t_id, String s_name, String r_name,int amount) {
 		super();
-		this.id = id;
+		this.t_id = t_id;
+		this.s_name = s_name;
+		this.r_name = r_name;
 		this.amount = amount;
-		this.status = status;
 	}
-	public int getId() {
-		return id;
+	//Getter and Setter
+	public int getT_id() {
+		return t_id;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setT_id(int t_id) {
+		this.t_id = t_id;
 	}
-	public int getAmount() {
+	public String getS_name() {
+		return s_name;
+	}
+	public void setS_name(String s_name) {
+		this.s_name = s_name;
+	}
+	public String getR_name() {
+		return r_name;
+	}
+	public void setR_name(String r_name) {
+		this.r_name = r_name;
+	}
+	public long getAmount() {
 		return amount;
 	}
-	public void setAmount(int amount) {
+	public void setAmount(long amount) {
 		this.amount = amount;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	
 	
 	
 	

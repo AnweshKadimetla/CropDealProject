@@ -1,8 +1,11 @@
 package com.example.demo.dealerController;
 
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dealerEntity.Dealer;
 import com.example.demo.dealerService.DealerService;
+import com.example.demo.farmerEntity.Farmer;
 @RestController
 @RequestMapping("/dealer")
 public class DealerController {
@@ -28,9 +32,10 @@ public class DealerController {
 	}
 	
 	@GetMapping("/findAll/{id}")  
-	public Dealer getDealerInfoById(@PathVariable("id") int id)   
+	public ResponseEntity<Dealer> getDealerInfoById(@PathVariable("id") int id)   
 	{  
-		return dealerService.getDealerById(id);
+		 Dealer dealer= dealerService.getDealerById(id);
+		 return new ResponseEntity<Dealer>(dealer,HttpStatus.OK);
 	} 
 	
 	@PostMapping("/addDealer")  

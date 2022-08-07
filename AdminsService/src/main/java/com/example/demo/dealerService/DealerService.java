@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.dealerEntity.Dealer;
 import com.example.demo.dealerRepository.DealerRepository;
+import com.example.demo.exception.ResourceNotFound;
 
 @Service
 public class DealerService {
@@ -24,7 +25,8 @@ public class DealerService {
 	
 	//get Dealer by id
 	public Dealer getDealerById(int id) {
-		return repo.findById(id).get();
+		Dealer dealer = repo.findById(id).orElseThrow(()-> new ResourceNotFound("Record Not Found"));
+		return dealer;
 	}
 	
 	//post Dealer info
