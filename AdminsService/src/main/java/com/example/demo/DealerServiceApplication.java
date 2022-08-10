@@ -12,6 +12,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 
 public class DealerServiceApplication {
+	@Bean
+	public RestTemplate getRestTemplate() {
+		return new RestTemplate();
+	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(DealerServiceApplication.class, args);

@@ -1,5 +1,6 @@
 package com.example.demo.dealerController;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import com.example.demo.dealerEntity.Dealer;
 import com.example.demo.dealerService.DealerService;
@@ -22,7 +24,22 @@ import com.example.demo.farmerEntity.Farmer;
 @RestController
 @RequestMapping("/dealer")
 public class DealerController {
-	
+	///Rest Template
+	@Autowired
+	private RestTemplate restTemplate;
+	private static String url="http://localhost:8070/farmers/findAll";
+	private static String url1="http://localhost:8070/dealer/findAll";
+	@GetMapping("/farmer")
+	public List<Object> getFarmer(){
+		Object[] farmer=restTemplate.getForObject(url,Object[].class);
+		return Arrays.asList(farmer);
+	}
+	@GetMapping("/dealerinfo")
+	public List<Object> getDealer(){
+		Object[] dealer=restTemplate.getForObject(url1,Object[].class);
+		return Arrays.asList(dealer);
+	}
+	//////////////
 	@Autowired
 	public DealerService dealerService;
 	
@@ -35,7 +52,7 @@ public class DealerController {
 	public ResponseEntity<Dealer> getDealerInfoById(@PathVariable("id") int id)   
 	{  
 		 Dealer dealer= dealerService.getDealerById(id);
-		 return new ResponseEntity<Dealer>(dealer,HttpStatus.OK);
+		 return new ResponseEntity<Dealer>(dealer,HttpStatus.OK);//Exception
 	} 
 	
 	@PostMapping("/addDealer")  

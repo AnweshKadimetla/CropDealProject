@@ -11,7 +11,6 @@ public class Farmer {
 	private String lastName;
 	private String address;
 	
-	
 	public Farmer() {
 		super();
 	}
