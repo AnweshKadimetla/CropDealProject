@@ -20,6 +20,8 @@ import org.springframework.web.client.RestTemplate;
 
 import com.example.demo.dealerEntity.Dealer;
 import com.example.demo.dealerService.DealerService;
+import com.example.demo.exception.DataAlreadyExists;
+import com.example.demo.exception.ResourceNotFound;
 import com.example.demo.farmerEntity.Farmer;
 @RestController
 @RequestMapping("/dealer")
@@ -49,28 +51,29 @@ public class DealerController {
 	}
 	
 	@GetMapping("/findAll/{id}")  
-	public ResponseEntity<Dealer> getDealerInfoById(@PathVariable("id") int id)   
+	public ResponseEntity<Dealer> getDealerInfoById(@PathVariable("id") int id) throws ResourceNotFound   
 	{  
 		 Dealer dealer= dealerService.getDealerById(id);
 		 return new ResponseEntity<Dealer>(dealer,HttpStatus.OK);//Exception
 	} 
 	
 	@PostMapping("/addDealer")  
-	public Dealer addDealerInfo(@RequestBody Dealer dealer)   
+	public Dealer addDealerInfo(@RequestBody Dealer dealer)throws DataAlreadyExists   
 	{  
 		dealerService.addDealerInfo(dealer); 
 		return dealer;  
 	}
 	
 	@PutMapping("/updateDealer/{id}")  
-	public Dealer updateDealerInfo(@PathVariable("id") int id,@RequestBody Dealer dealer)   
+	public void updateDealerInfo(@PathVariable("id") int id,@RequestBody Dealer dealer)throws ResourceNotFound   
 	{  
 		dealerService.updateDealerInfo(id,dealer);
-	return dealer;  
+		
 	}  
 	
+
 	@DeleteMapping("/deleteDealer/{id}")  
-	public void deleteDealerInfo(@PathVariable("id") int id)   
+	public void deleteFarmerInfo(@PathVariable("id") int id)   
 	{  
 		dealerService.deleteDealerInfo(id);  
 	}  

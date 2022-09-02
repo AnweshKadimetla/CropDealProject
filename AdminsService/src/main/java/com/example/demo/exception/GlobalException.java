@@ -15,5 +15,9 @@ public class GlobalException {
 		ErrorDetails error = new ErrorDetails(ex.getMessage(),"404",new Date());
 		return new ResponseEntity<ErrorDetails>(error,HttpStatus.NOT_FOUND); 
 	}
-
+	
+	public ResponseEntity<ErrorDetails> dataAlreadyExists(DataAlreadyExists ex, WebRequest req){
+		ErrorDetails error1 = new ErrorDetails(ex.getMessage(),"404",new Date());
+		return new ResponseEntity<ErrorDetails>(error1,HttpStatus.ALREADY_REPORTED); 
+	}
 }
