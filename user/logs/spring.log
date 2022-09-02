@@ -1,0 +1,125 @@
+2022-08-10 16:50:08 - Starting UserApplication using Java 17.0.2 on inlen8520018506 with PID 36192 (C:\My-WorkSpace\Bench\FlightBooking\user\target\classes started by arpithan in C:\My-WorkSpace\Bench\FlightBooking\user)
+2022-08-10 16:50:08 - No active profile set, falling back to 1 default profile: "default"
+2022-08-10 16:50:09 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-08-10 16:50:10 - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-08-10 16:50:11 - Finished Spring Data repository scanning in 311 ms. Found 0 Reactive MongoDB repository interfaces.
+2022-08-10 16:50:11 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-08-10 16:50:11 - Finished Spring Data repository scanning in 54 ms. Found 1 MongoDB repository interfaces.
+2022-08-10 16:50:11 - BeanFactory id=df157756-135c-3345-9d31-4bdd52c4f137
+2022-08-10 16:50:12 - Tomcat initialized with port(s): 8000 (http)
+2022-08-10 16:50:12 - Starting service [Tomcat]
+2022-08-10 16:50:12 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-10 16:50:12 - Initializing Spring embedded WebApplicationContext
+2022-08-10 16:50:12 - Root WebApplicationContext: initialization completed in 3578 ms
+2022-08-10 16:50:12 - No URLs will be polled as dynamic configuration sources.
+2022-08-10 16:50:12 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-10 16:50:12 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@41a23470
+2022-08-10 16:50:13 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@26d7cb0d], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@23e9dd78]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@470c4229], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-08-10 16:50:13 - Opened connection [connectionId{localValue:2, serverValue:27}] to localhost:27017
+2022-08-10 16:50:13 - Opened connection [connectionId{localValue:1, serverValue:28}] to localhost:27017
+2022-08-10 16:50:13 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=38826400}
+2022-08-10 16:50:13 - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-08-10 16:50:13 - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-08-10 16:50:14 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f0c1409, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@188ae8d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b54a0a4, org.springframework.security.web.header.HeaderWriterFilter@3f71ae7f, org.springframework.security.web.authentication.logout.LogoutFilter@574327ed, com.user.filter.JwtRequestFilter@18dac12f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e64ae1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f5ac587, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a522157, org.springframework.security.web.session.SessionManagementFilter@687f62a5, org.springframework.security.web.access.ExceptionTranslationFilter@7e451790, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@117069f2]
+2022-08-10 16:50:14 - No URLs will be polled as dynamic configuration sources.
+2022-08-10 16:50:14 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-10 16:50:16 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@26d7cb0d], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@23e9dd78]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@470c4229], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-08-10 16:50:16 - Opened connection [connectionId{localValue:4, serverValue:29}] to localhost:27017
+2022-08-10 16:50:16 - Opened connection [connectionId{localValue:3, serverValue:30}] to localhost:27017
+2022-08-10 16:50:16 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11599600}
+2022-08-10 16:50:17 - Eureka HTTP Client uses RestTemplate.
+2022-08-10 16:50:17 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-10 16:50:17 - Exposing 0 endpoint(s) beneath base path '/actuator'
+2022-08-10 16:50:17 - Setting initial instance status as: STARTING
+2022-08-10 16:50:17 - Initializing Eureka in region us-east-1
+2022-08-10 16:50:17 - Resolving eureka endpoints via configuration
+2022-08-10 16:50:17 - Disable delta property : false
+2022-08-10 16:50:17 - Single vip registry refresh property : null
+2022-08-10 16:50:17 - Force full registry fetch : false
+2022-08-10 16:50:17 - Application is null : false
+2022-08-10 16:50:17 - Registered Applications size is zero : true
+2022-08-10 16:50:17 - Application version is -1: true
+2022-08-10 16:50:17 - Getting all instance registry info from the eureka server
+2022-08-10 16:50:18 - The response status is 200
+2022-08-10 16:50:18 - Starting heartbeat executor: renew interval is: 30
+2022-08-10 16:50:18 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-10 16:50:18 - Discovery Client initialized at timestamp 1660130418078 with initial instances count: 5
+2022-08-10 16:50:18 - Registering application USER with eureka with status UP
+2022-08-10 16:50:18 - Saw local status change event StatusChangeEvent [timestamp=1660130418082, current=UP, previous=STARTING]
+2022-08-10 16:50:18 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000: registering service...
+2022-08-10 16:50:18 - Tomcat started on port(s): 8000 (http) with context path ''
+2022-08-10 16:50:18 - Updating port to 8000
+2022-08-10 16:50:18 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000 - registration status: 204
+2022-08-10 16:50:18 - Started UserApplication in 10.495 seconds (JVM running for 11.948)
+2022-08-10 16:51:31 - Application shutdown requested.
+2022-08-10 16:51:31 - Unregistering application USER with eureka with status DOWN
+2022-08-10 16:51:31 - Saw local status change event StatusChangeEvent [timestamp=1660130491635, current=DOWN, previous=UP]
+2022-08-10 16:51:31 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000: registering service...
+2022-08-10 16:51:31 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000 - registration status: 204
+2022-08-10 16:51:31 - Shutting down DiscoveryClient ...
+2022-08-10 16:51:34 - Unregistering ...
+2022-08-10 16:51:34 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000 - deregister  status: 200
+2022-08-10 16:51:34 - Completed shut down of DiscoveryClient
+2022-08-10 16:51:42 - Starting UserApplication using Java 17.0.2 on inlen8520018506 with PID 29616 (C:\My-WorkSpace\Bench\FlightBooking\user\target\classes started by arpithan in C:\My-WorkSpace\Bench\FlightBooking\user)
+2022-08-10 16:51:42 - No active profile set, falling back to 1 default profile: "default"
+2022-08-10 16:51:43 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-08-10 16:51:44 - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-08-10 16:51:44 - Finished Spring Data repository scanning in 226 ms. Found 0 Reactive MongoDB repository interfaces.
+2022-08-10 16:51:44 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-08-10 16:51:44 - Finished Spring Data repository scanning in 51 ms. Found 1 MongoDB repository interfaces.
+2022-08-10 16:51:44 - BeanFactory id=df157756-135c-3345-9d31-4bdd52c4f137
+2022-08-10 16:51:45 - Tomcat initialized with port(s): 8000 (http)
+2022-08-10 16:51:45 - Starting service [Tomcat]
+2022-08-10 16:51:45 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-10 16:51:45 - Initializing Spring embedded WebApplicationContext
+2022-08-10 16:51:45 - Root WebApplicationContext: initialization completed in 3155 ms
+2022-08-10 16:51:45 - No URLs will be polled as dynamic configuration sources.
+2022-08-10 16:51:45 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-10 16:51:45 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@30afb481
+2022-08-10 16:51:46 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@6d0a14c2], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5b64f771]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@153c6603], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-08-10 16:51:46 - Opened connection [connectionId{localValue:1, serverValue:32}] to localhost:27017
+2022-08-10 16:51:46 - Opened connection [connectionId{localValue:2, serverValue:31}] to localhost:27017
+2022-08-10 16:51:46 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=39698300}
+2022-08-10 16:51:46 - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-08-10 16:51:46 - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2022-08-10 16:51:47 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17034458, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e0e0ba7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e0802e0, org.springframework.security.web.header.HeaderWriterFilter@2a8e30e3, org.springframework.security.web.authentication.logout.LogoutFilter@34d11c92, com.user.filter.JwtRequestFilter@44976b08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@687f62a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e64ae1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7df5549e, org.springframework.security.web.session.SessionManagementFilter@4ca907af, org.springframework.security.web.access.ExceptionTranslationFilter@3faa55, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34ede267]
+2022-08-10 16:51:47 - No URLs will be polled as dynamic configuration sources.
+2022-08-10 16:51:47 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-08-10 16:51:49 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@6d0a14c2], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5b64f771]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@153c6603], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-08-10 16:51:49 - Opened connection [connectionId{localValue:3, serverValue:34}] to localhost:27017
+2022-08-10 16:51:49 - Opened connection [connectionId{localValue:4, serverValue:33}] to localhost:27017
+2022-08-10 16:51:49 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7007200}
+2022-08-10 16:51:50 - Eureka HTTP Client uses RestTemplate.
+2022-08-10 16:51:50 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-10 16:51:50 - Exposing 0 endpoint(s) beneath base path '/actuator'
+2022-08-10 16:51:50 - Setting initial instance status as: STARTING
+2022-08-10 16:51:50 - Initializing Eureka in region us-east-1
+2022-08-10 16:51:50 - Resolving eureka endpoints via configuration
+2022-08-10 16:51:50 - Disable delta property : false
+2022-08-10 16:51:50 - Single vip registry refresh property : null
+2022-08-10 16:51:50 - Force full registry fetch : false
+2022-08-10 16:51:50 - Application is null : false
+2022-08-10 16:51:50 - Registered Applications size is zero : true
+2022-08-10 16:51:50 - Application version is -1: true
+2022-08-10 16:51:50 - Getting all instance registry info from the eureka server
+2022-08-10 16:51:51 - The response status is 200
+2022-08-10 16:51:51 - Starting heartbeat executor: renew interval is: 30
+2022-08-10 16:51:51 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-10 16:51:51 - Discovery Client initialized at timestamp 1660130511200 with initial instances count: 5
+2022-08-10 16:51:51 - Registering application USER with eureka with status UP
+2022-08-10 16:51:51 - Saw local status change event StatusChangeEvent [timestamp=1660130511204, current=UP, previous=STARTING]
+2022-08-10 16:51:51 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000: registering service...
+2022-08-10 16:51:51 - Tomcat started on port(s): 8000 (http) with context path ''
+2022-08-10 16:51:51 - Updating port to 8000
+2022-08-10 16:51:51 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000 - registration status: 204
+2022-08-10 16:51:51 - Started UserApplication in 9.971 seconds (JVM running for 11.357)
+2022-08-10 16:56:50 - Resolving eureka endpoints via configuration
+2022-08-10 16:58:30 - Application shutdown requested.
+2022-08-10 16:58:30 - Unregistering application USER with eureka with status DOWN
+2022-08-10 16:58:30 - Saw local status change event StatusChangeEvent [timestamp=1660130910212, current=DOWN, previous=UP]
+2022-08-10 16:58:30 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000: registering service...
+2022-08-10 16:58:30 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000 - registration status: 204
+2022-08-10 16:58:30 - Shutting down DiscoveryClient ...
+2022-08-10 16:58:33 - Unregistering ...
+2022-08-10 16:58:33 - DiscoveryClient_USER/inlen8520018506.corp.capgemini.com:user:8000 - deregister  status: 200
+2022-08-10 16:58:33 - Completed shut down of DiscoveryClient
