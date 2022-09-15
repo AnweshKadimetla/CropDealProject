@@ -1,9 +1,11 @@
 package com.example.demo.farmerEntity;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="Farmer")
+@Document(collection="Hi")
 public class Farmer {
+	@Id
 	private int id;
 	private String cropType;
 	private String name;
@@ -15,7 +17,7 @@ public class Farmer {
 		super();
 	}
 	//Parameterized constructor
-	public Farmer(int id, String cropType, String quantity, int price, String location,String name) {
+	public Farmer(int id, String cropType, String quantity, String location, int price,String name) {
 		super();
 		this.id = id;
 		this.cropType = cropType;
