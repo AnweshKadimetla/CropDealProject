@@ -2,12 +2,18 @@ package com.example.demo.common;
 
 public class Payment {
 	
-	 private int paymentId;
+	 	private int paymentId;
 	    private String paymentStatus;
 	    private String txId;
 	    private int orderId;
 	    private double amount;
 
+	    public int getPaymentId() {
+	    	return paymentId;
+	    }
+	    public void setPaymentId(int paymentId) {
+	    	this.paymentId = paymentId;
+	    }
 	    public int getOrderId() {
 	        return orderId;
 	    }

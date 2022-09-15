@@ -15,11 +15,11 @@ import com.example.demo.common.TxResponse;
 public class OrderController {
 	
 	@Autowired
-    private OrderService service;
+    private OrderService orderService;
 
     @PostMapping("/placeOrder/")
     public TxResponse placeOrder(@RequestBody Order order){
-        return service.placeOrder(order);
+        return orderService.placeOrder(order);
     }
 
 }
